@@ -1,0 +1,26 @@
+<suite name="To Do App from QAcart">
+    <test name="regression test">
+        <classes>
+            <class name="LoginPageTestCases">
+                <method>
+                    <exinclule name="Login_With_Invalid_Email_And_Valid_Password" />
+                    <inclule name="Login_With_Invalid_Email_And_Invalid_Password" />
+                </method>
+            </class>
+            <class name="SignupPageTestCases"/>
+        </classes>
+    </test>
+
+    <test name="sanity test">
+        <parameter name="platformName" value="Android" />
+        <groups>
+            <run>
+                <include name="sanity" />
+            </run>
+        </groups>
+        <classes>
+            <class name="LoginPageTestCases"/>
+            <class name="SignupPageTestCases"/>
+        </classes>
+    </test>
+</suite>
