@@ -2,5 +2,9 @@
   "validUser" : {
     "email": "quocviet.ce@gmail.com",
     "password": "123456"
+  },
+  "inValidUser" : {
+    "email": "hatem@qacart.com",
+    "password": "wrongPassword"
   }
 }

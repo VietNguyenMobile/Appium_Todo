@@ -48,7 +48,7 @@ public class Base {
         extent.addSystemInfo("Tester Name", "Viet Nguyen");
         extent.addSystemInfo("App", "QA Cart To Do");
         extent.addSystemInfo("Test Type", "Regression Test");
-//        extent.loadConfig(new File("./extent-report.xml"));
+        extent.loadConfig(new File("./extent-report.xml"));
     }
 
     @AfterSuite
@@ -117,5 +117,5 @@ public class Base {
 
         extent.endTest(logger);
     }
-    
+
 }
