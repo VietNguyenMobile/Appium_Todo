@@ -14,6 +14,7 @@ public class OpenTheApp {
     @Test
     public void openAppOnAndroid() throws MalformedURLException {
         String url = "http://127.0.0.1:4723/wd/hub";
+//        String url = "http://local:8200/wd/hub";
         DesiredCapabilities caps = new DesiredCapabilities();
         caps.setCapability(MobileCapabilityType.DEVICE_NAME,"emulator-5554");
         caps.setCapability(MobileCapabilityType.PLATFORM_NAME, Platform.ANDROID);

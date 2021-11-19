@@ -1,6 +1,7 @@
+import com.qacart.base.Base;
 import org.testng.annotations.Test;
 
-public class SignupPageTestCases {
+public class SignupPageTestCases extends Base {
 
     @Test (priority = 1)
     public void signup_with_valid_name_and_email_and_password() {

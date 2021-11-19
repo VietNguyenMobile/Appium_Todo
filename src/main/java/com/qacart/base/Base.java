@@ -81,8 +81,8 @@ public class Base {
             caps.setCapability(MobileCapabilityType.APP, props.getProperty("androidApp"));
             caps.setCapability(MobileCapabilityType.AUTOMATION_NAME, AutomationName.ANDROID_UIAUTOMATOR2);
             caps.setCapability(MobileCapabilityType.ORIENTATION, "PORTRAIT");
-            caps.setCapability(AndroidMobileCapabilityType.APP_PACKAGE, "com.todoqacart");
-            caps.setCapability(AndroidMobileCapabilityType.APP_ACTIVITY, "com.todoqacart.MainActivity");
+//            caps.setCapability(AndroidMobileCapabilityType.APP_PACKAGE, "com.todoqacart");
+//            caps.setCapability(AndroidMobileCapabilityType.APP_ACTIVITY, "com.todoqacart.MainActivity");
 
             driver = new AndroidDriver<MobileElement>(appiumServerURL, caps);
         } else {
